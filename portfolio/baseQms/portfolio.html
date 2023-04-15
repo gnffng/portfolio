@@ -47,40 +47,44 @@
                         <h3>Description</h3>
                     </div>
                     <ul class="project-general-info">
-                        <li><p><i class="fa fa-user"></i>Hanbong</p></li>
-                        <li><p><i class="fa fa-globe"></i><a href="http://portfolio.joohanbong.kro.kr:8080" target="_blank">링크</a> <i class="fa fa-github"></i><a href="https://github.com/gnffng/O2O" target="_blank">깃허브</a></p></li>
-                        <li><p><i class="fa fa-calendar"></i>2021~2022</p></li>
+                        <li><p><i class="fa fa-user"></i>주한봉 외 7명</p></li>
+                        <li><p><i class="fa fa-calendar"></i>2023.02~진행중</p></li>
                     </ul>
                     <br>
 
                     <p class="text-justify">
                         <b># 프로젝트 요약</b><br>
-                        링크사업단의 일환으로 기업 선앤두의 홈페이지를 제작하게 되었습니다.<br><br>
+                        생산의 품질과 관련된 기능을 데이터의 흐름에 따라 연쇄적으로 처리해주는 ScQMS 시스템을 웹페이지로 제작함<br><br>
 
                         <b># 프로젝트 진행과정</b><br>
-                        - 키오스크, 주문어플의 주문을 받는 서버프로그램을 설계한다.<br>
-                        - 클라이언트의 주문 CRUD를 처리하는 RestAPI를 제작한다.<br>
-                        - 관리자 페이지를 제작하여 주문 및 상품 등을 사이트에서 제어할 수 있도록 한다.<br>
-                        - 주문이 들어오면 관리자 페이지에 실시간 알람이 울리도록 한다.<br>
-                        - 'spring boot' 프레임워크를 이용해 웹사이트를 제작한다.<br>
-                        - 'thymeleaf', 'bootstrap' 라이브러리를 사용하여 관리자 페이지 뷰를 구성한다.<br>
-                        - 'mysql'을 이용하여 DB를 설계한다.<br>
-                        - 레이어드 아키텍쳐를 사용하여 DB를 설계한다(View, Controller, Service, Repository, DAO).<br><br>
+                        - API는 Spring Boot 기반으로 프로젝트를 진행한다.<br>
+                        - UI는 React 기반으로 프로젝트를 진행한다.<br>
+                        - MSSQL을 DB로 사용한다.<br>
+                        - Business Losic에 맞게 DB를 설계한다(범용성 있게).<br>
+                        - 공통코드, 메뉴정보, 메뉴권한 등을 설계하고 Data를 Insert한다.<br>
+                        - QueryDsl을 사용하여 동적 쿼리를 사용한다.<br>
+                        - DataGrid는 DevExtreme을 사용하여 그린다.<br>
+                        - OAuth 서버를 사용하여 token을 발행한다.<br>
+                        - Eureka / Zuul / Hystrix 등의 MSA 설계는 option으로 제공한다.<br>
+                        - token은 JWT로 발행하여 프론트엔드에서 관리한다.<br><br>
 
                         <b># 기술 스택</b><br>
-                        spring boot / mysql / thymeleaf / bootstrap / spring scurity / restAPI / postman<br><br>
+                        spring / react / mssql / oauth2 / queryDsl / devExtreme <br><br>
 
                         <b># 팀원</b><br>
-                        *주한봉(개인프로젝트)<br>
-                        -> DB설계 / 로직설계 / 코드작성 / 테스트 / 디버깅<br><br>
-
+                        *주한봉<br>
+                        -> DB설계 / 수입검사 관련 기능 / Log 관련 기능 / Email Server 구현 / 테스트 <br>
+                        *그외<br>
+                        -> 그외 기능 다수 <br><br>
 
                         <b># 후기</b><br>
-                        'spring boot' 프레임워크를 공부하며 진행한 프로젝트입니다.<br>
-                        작은 RestAPI에서 시작하여 관리자 페이지, 보안, 실시간 소켓통신 등 하나씩 배운 기능들을 더해가며 풍부해져가는 프로젝트를 보니 뿌듯한 마음이 들었습니다.<br>
-                        처음에는 공부를 할 겸 가벼운 마음으로 시작한 프로젝트였지만, 내가 소비자라면 어떤 기능들이 필요할까를 생각하며 기능을 추가해 나가다 보니 1년이 넘게 프로젝트를 진행하게 되었습니다.<br>
-                        모든 개발은 산출물을 소비하는 클라이언트의 시선에 맞추어 진행해야 한다는 것을 느끼게 되었습니다.<br>
-                        나중에 여유가 되면 클라이언트 어플을 제작하여 통신을 해볼 것 같습니다.<br>
+                        기존에 있던 QMS 솔루션을 분석하여 GS인증을 받을 수 있는 프로젝트로 리펙토링을 하는 차세대 프로젝트입니다.<br>
+                        UI를 ThymeLeaf에서 React로 변경했기도 하고 GS인증의 기준에 따라 새로 개발할 부분들도 많았기 때문에 리펙토링 보다는 참고자료가 있는 완전 새로운 프로젝트를 개발하는 기분이었습니다.<br>
+                        이 프로젝트를 하며 팀에서 처음으로 PullRequest 문화를 도입하기도 했고 제대로 된 협업을 처음으로 느껴본 프로젝트였기 때문에 많은 경험을 쌓을 수 있었습니다.<br>
+                        역할 분담을 하여 각자 맡은 화면을 구현하는 와중에 공용으로 사용될법한 공용기능들을 범용성있게 개발하여 팀원들에게 공유하는 등 서로의 협업이 잘 이루어졌던 것 같습니다.<br>
+                        저도 Custom IdGenerator나 Email 모듈 등 공용기능을 개발하여 세미나에서 공유를 했던 기억이 납니다.<br>
+                        또한 MSA의 기반 설계를 경험해보며 대용량 트래픽에 대한 고민을 많이 해보는 시간이었던 것 같습니다.<br>
+                        이 프로젝트를 통해 저에게 개발자로서 자신감이 많이 생기게 되었다고 생각합니다.<br>
                     </p>
                     <!-- /Project Description -->
 
@@ -90,11 +94,13 @@
                             <h3>Tags</h3>
                         </div>
                         <ul class="tags">
-                            <li><a>RestAPI</a></li>
-                            <li><a>관리자페이지</a></li>
-                            <li><a>O2O</a></li>
-                            <li><a>보안</a></li>
-                            <li><a>아키텍쳐</a></li>
+                            <li><a>Spring Boot</a></li>
+                            <li><a>React</a></li>
+                            <li><a>MSSQL</a></li>
+                            <li><a>Oauth2</a></li>
+                            <li><a>QMS</a></li>
+                            <li><a>MSA</a></li>
+                            <li><a>리펙토링</a></li>
                         </ul>
                     </div>
                     <!-- /Tags -->
