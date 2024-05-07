@@ -7,14 +7,14 @@
         </div>
 
         <div class="ajax-page-title">
-            <h1>Enssel 자사 솔루션 MSA 고도화</h1>
+            <h1>삼성 설계 점검 시스템 SM 개발</h1>
         </div>
 
         <div class="row">
             <div class="col-sm-6 col-md-6 portfolio-block">
                 <div class="owl-carousel portfolio-page-carousel">
                     <div class="item">
-                        <img src="portfolio/baseQms/img/logo.png" alt="">
+                        <img src="portfolio/iceBacon/img/logo.png" alt="">
                     </div>
                 </div>
 
@@ -47,35 +47,33 @@
                         <h3>Description</h3>
                     </div>
                     <ul class="project-general-info">
-                        <li><p><i class="fa fa-user"></i>주한봉 외 8명</p></li>
-                        <li><p><i class="fa fa-calendar"></i>2023.02~2023.10</p></li>
+                        <li><p><i class="fa fa-user"></i>주한봉 외 1명</p></li>
+                        <li><p><i class="fa fa-calendar"></i>2024.01~2024.05</p></li>
                     </ul>
                     <br>
 
                     <p class="text-justify">
                         <b># 프로젝트 요약</b><br>
-                        사내 솔루션 품질관리 시스템을 MiniService Architecture로 고도화 함<br><br>
+                        삼성전자의 설비 점검 시스템 SM 운영 개발 프로젝트.<br><br>
 
                         <b># 프로젝트 진행과정</b><br>
-                        - API Gateway : Spring Cloud Gateway<br>
-                        - Service Discovery : Eureka<br>
-                        - LoadBalancer : Ribbon<br>
-                        - Event Sourcing (CQRS) : Kafka / Elastic Search<br>
-                        - DB : MSSQL, MongoDB<br>
-                        - Oauth : Spring Oauth2 -> JWT<br>
-                        - UI : React<br>
-                        - 팀을 나누어 MSA 세미나를 진행 / 외부 교육에 참석
-                        - 일단 러프하게 Service를 쪼개고 점진적으로 MSA의 핵심 사상들을 적용함
-                        - MicroService Architecture를 적용하기에는 프로젝트의 규모가 작아서 MiniService Architecture로 적용함
+                        - API : Spring Boot<br>
+                        - UI : Vue.js<br>
+                        - DB : Oracle<br>
+                        - 협업툴 : Jira<br>
+                        - Tomcat Thread Dump를 Tracing 하여 DB 데드록 문제 해결<br>
+                        - Tomcat Heap Dump를 Tracing 하여 메모리 누수 문제 해결<br>
+                        - 기존에는 동일 사업부서 내에서만 호환되던 데이터를 타 사업 부서에서도 호환되도록 확장 개발<br>
+                        - 유지보수 개발 건 약 25건 처리(쿼리 작성, Data 전처리 등)<br><br>
 
                         <b># 기술 스택</b><br>
-                        Spring Cloud Gateway / Eureka / Ribbon / MSSQL / MongoDB / Oauth / Kafka / Elastic Search / React<br><br>
+                        Spring Boot / Vue.js / Oracle / Jira / Jmap / Jhat<br><br>
 
                         <b># 후기</b><br>
-                        기존에 있던 QMS 솔루션을 여러 Service로 분리하여 MSA를 적용하는 프로젝트였습니다.<br>
-                        세미나와 교육을 통해 Architecture의 이해도가 늘어남에 따라 백엔드 선배님들의 고민의 흔적이 느껴졌던 것 같습니다.<br>
-                        그리고 정말 큰 규모의 Service가 아닌 이상은 쉽사리 적용하기 힘든 Architecture라는 것이 느껴졌습니다.<br>
-                        언젠가 정말 MSA가 꼭 필요한 규모의 큰 Live Service를 개발 및 운영해보고 싶다는 생각이 들었습니다.<br>
+                        기존에 개발이 된 시스템을 SM 운영 개발 하는 것이기 때문에 개발보다는 분석에 훨씬 많은 시간을 들여야 했습니다.<br>
+                        기존 설계 의도에 어긋나게 개발된 부분들이나, 애초부터 설계가 잘못된 부분들을 마주할 때면 항상 '최선의 구조'가 무엇인지 고민했습니다.<br>
+                        당장 리팩토링을 할 여유가 되지 않더라도 개선방향에 대해서는 짬짬히 고민했던 것 같습니다.<br>
+                        잘못된 구조를 모두 바로잡지는 못했지만, 그래도 Scheduler, Tomcat OOME Dump 생성 등 핵심 기능 한 둘 정도는 구조 개선을 할 수 있었습니다.<br>
                     </p>
                     <!-- /Project Description -->
 
@@ -85,15 +83,10 @@
                             <h3>Tags</h3>
                         </div>
                         <ul class="tags">
-                            <li><a>Spring Cloud Gateway</a></li>
-                            <li><a>Eureka</a></li>
-                            <li><a>Ribbon</a></li>
-                            <li><a>MSSQL</a></li>
-                            <li><a>MongoDB</a></li>
-                            <li><a>Oauth</a></li>
-                            <li><a>Kafka</a></li>
-                            <li><a>Elastic Search</a></li>
-                            <li><a>React</a></li>
+                            <li><a>Spring Boot</a></li>
+                            <li><a>Vue.js</a></li>
+                            <li><a>Oracle</a></li>
+                            <li><a>Jira</a></li>
                         </ul>
                     </div>
                     <!-- /Tags -->
